@@ -1,0 +1,4 @@
+C:\Users\rikud\source\repos\Калькулятор_НАЭТОТРАЗПОСЛЕДНИЙ\Debug\Калькулятор_НАЭТОТРАЗПОСЛЕДНИЙ.vcxproj.AssemblyReference.cache
+C:\Users\rikud\source\repos\Калькулятор_НАЭТОТРАЗПОСЛЕДНИЙ\Debug\Калькулятор_НАЭТОТРАЗПОСЛЕДНИЙ.Form1.resources
+C:\Users\rikud\source\repos\Калькулятор_НАЭТОТРАЗПОСЛЕДНИЙ\Debug\Калькулятор_НАЭТОТРАЗПОСЛЕДНИЙ.vcxproj.GenerateResource.cache
+C:\Users\rikud\source\repos\Калькулятор_НАЭТОТРАЗПОСЛЕДНИЙ\Debug\Калькулятор_НАЭТОТРАЗПОСЛЕДНИЙ.exe
