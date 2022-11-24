@@ -346,6 +346,7 @@ namespace CppCLRWinformsProjekt {
 			this->result->TabStop = false;
 			this->result->Text = L"0";
 			this->result->TextAlign = System::Windows::Forms::HorizontalAlignment::Right;
+			this->result->TextChanged += gcnew System::EventHandler(this, &Form1::result_TextChanged);
 			// 
 			// equation
 			// 
@@ -405,11 +406,25 @@ namespace CppCLRWinformsProjekt {
 	}
 
 	private: System::Void buttonAll_Click(System::Object^ sender, System::EventArgs^ e) {
+		Button^ b = (Button^)sender;
+
+
+		//форматирование
+		if ( (result->Text == "0" && (b->Text == "," || b->Text == "."))) {
+			result->Text = "0,";
+		}
+		if ((result->Text == "" && (b->Text == "," || b->Text == "."))) {
+			result->Text = "0,";
+		}
+
+		
+
+
 		if (result->Text == "0" || operation_pressed ) {
 			result->Clear();
 		}
 		operation_pressed = false;
-		Button^ b = (Button^)sender;
+		
 		if (b->Text == ",") {
 			if (!result->Text->Contains(",")) {
 				result->Text = result->Text + b->Text;
@@ -474,7 +489,12 @@ private: System::Void button17_Click(System::Object^ sender, System::EventArgs^ 
 	value = 0;
 	equation->Text = "";
 }
+	   
 	private: System::Void Form1_KeyPress(System::Object^ sender, System::Windows::Forms::KeyPressEventArgs^ e) {
+		
+
+		//MessageBox::Show(Convert::ToInt32(e->KeyChar).ToString());
+		
 		
 		if (e->KeyChar.ToString() == "1") {
 			one->PerformClick();
@@ -536,10 +556,30 @@ private: System::Void button17_Click(System::Object^ sender, System::EventArgs^ 
 			comma->PerformClick();
 
 		}
-		else if (e->KeyChar.ToString() == ((char)127).ToString()) { //del btn
+		else if (e->KeyChar == 8) { //backspace btn
+			
+			if (result->TextLength >= 1) {
+				result->Text = result->Text->Remove(result->TextLength - 1);
+				if (result->TextLength == 0) {
+					result->Text = "0";
+				}
+			}
+	
+			//MessageBox::Show("backspace pressed");
+
+		}
+		else if (e->KeyChar == 127) { //не работает почему то
 			C->PerformClick();
 
 		}
+		else if (e->KeyChar.ToString() == ".") {
+			comma->PerformClick();
+
+		}
+
 	}
+private: System::Void result_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+	
+}
 };
 }
