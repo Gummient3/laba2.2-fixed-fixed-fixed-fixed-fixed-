@@ -44,24 +44,43 @@ namespace CppCLRWinformsProjekt {
 				delete components;
 			}
 		}
-	private: System::Windows::Forms::Button^ button1;
-	private: System::Windows::Forms::Button^ button2;
-	private: System::Windows::Forms::Button^ button3;
-	private: System::Windows::Forms::Button^ button4;
-	private: System::Windows::Forms::Button^ button5;
-	private: System::Windows::Forms::Button^ button6;
-	private: System::Windows::Forms::Button^ button7;
-	private: System::Windows::Forms::Button^ button8;
-	private: System::Windows::Forms::Button^ button9;
-	private: System::Windows::Forms::Button^ button10;
-	private: System::Windows::Forms::Button^ button11;
-	private: System::Windows::Forms::Button^ button12;
-	private: System::Windows::Forms::Button^ button13;
-	private: System::Windows::Forms::Button^ button14;
-	private: System::Windows::Forms::Button^ button15;
-	private: System::Windows::Forms::Button^ button16;
-	private: System::Windows::Forms::Button^ button17;
-	private: System::Windows::Forms::Button^ button18;
+	private: System::Windows::Forms::Button^ seven;
+	private: System::Windows::Forms::Button^ eight;
+	private: System::Windows::Forms::Button^ nine;
+	protected:
+
+
+
+	private: System::Windows::Forms::Button^ four;
+	private: System::Windows::Forms::Button^ five;
+	private: System::Windows::Forms::Button^ six;
+
+
+
+	private: System::Windows::Forms::Button^ one;
+	private: System::Windows::Forms::Button^ two;
+	private: System::Windows::Forms::Button^ three;
+
+
+
+	private: System::Windows::Forms::Button^ zero;
+	private: System::Windows::Forms::Button^ comma;
+	private: System::Windows::Forms::Button^ add;
+
+
+
+	private: System::Windows::Forms::Button^ sub;
+
+	private: System::Windows::Forms::Button^ mult;
+
+	private: System::Windows::Forms::Button^ div;
+	private: System::Windows::Forms::Button^ equal;
+	private: System::Windows::Forms::Button^ C;
+
+
+
+	private: System::Windows::Forms::Button^ CE;
+
 	private: System::Windows::Forms::TextBox^ result;
 
 	protected:
@@ -79,207 +98,241 @@ namespace CppCLRWinformsProjekt {
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			this->button1 = (gcnew System::Windows::Forms::Button());
-			this->button2 = (gcnew System::Windows::Forms::Button());
-			this->button3 = (gcnew System::Windows::Forms::Button());
-			this->button4 = (gcnew System::Windows::Forms::Button());
-			this->button5 = (gcnew System::Windows::Forms::Button());
-			this->button6 = (gcnew System::Windows::Forms::Button());
-			this->button7 = (gcnew System::Windows::Forms::Button());
-			this->button8 = (gcnew System::Windows::Forms::Button());
-			this->button9 = (gcnew System::Windows::Forms::Button());
-			this->button10 = (gcnew System::Windows::Forms::Button());
-			this->button11 = (gcnew System::Windows::Forms::Button());
-			this->button12 = (gcnew System::Windows::Forms::Button());
-			this->button13 = (gcnew System::Windows::Forms::Button());
-			this->button14 = (gcnew System::Windows::Forms::Button());
-			this->button15 = (gcnew System::Windows::Forms::Button());
-			this->button16 = (gcnew System::Windows::Forms::Button());
-			this->button17 = (gcnew System::Windows::Forms::Button());
-			this->button18 = (gcnew System::Windows::Forms::Button());
+			this->seven = (gcnew System::Windows::Forms::Button());
+			this->eight = (gcnew System::Windows::Forms::Button());
+			this->nine = (gcnew System::Windows::Forms::Button());
+			this->four = (gcnew System::Windows::Forms::Button());
+			this->five = (gcnew System::Windows::Forms::Button());
+			this->six = (gcnew System::Windows::Forms::Button());
+			this->one = (gcnew System::Windows::Forms::Button());
+			this->two = (gcnew System::Windows::Forms::Button());
+			this->three = (gcnew System::Windows::Forms::Button());
+			this->zero = (gcnew System::Windows::Forms::Button());
+			this->comma = (gcnew System::Windows::Forms::Button());
+			this->add = (gcnew System::Windows::Forms::Button());
+			this->sub = (gcnew System::Windows::Forms::Button());
+			this->mult = (gcnew System::Windows::Forms::Button());
+			this->div = (gcnew System::Windows::Forms::Button());
+			this->equal = (gcnew System::Windows::Forms::Button());
+			this->C = (gcnew System::Windows::Forms::Button());
+			this->CE = (gcnew System::Windows::Forms::Button());
 			this->result = (gcnew System::Windows::Forms::TextBox());
 			this->equation = (gcnew System::Windows::Forms::Label());
 			this->SuspendLayout();
 			// 
-			// button1
+			// seven
 			// 
-			this->button1->Location = System::Drawing::Point(13, 48);
-			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(35, 35);
-			this->button1->TabIndex = 0;
-			this->button1->Text = L"7";
-			this->button1->UseVisualStyleBackColor = true;
-			this->button1->Click += gcnew System::EventHandler(this, &Form1::buttonAll_Click);
+			this->seven->Location = System::Drawing::Point(13, 48);
+			this->seven->Name = L"seven";
+			this->seven->Size = System::Drawing::Size(35, 35);
+			this->seven->TabIndex = 0;
+			this->seven->TabStop = false;
+			this->seven->Text = L"7";
+			this->seven->UseVisualStyleBackColor = true;
+			this->seven->Click += gcnew System::EventHandler(this, &Form1::buttonAll_Click);
+			this->seven->Enter += gcnew System::EventHandler(this, &Form1::Do_Nothing);
 			// 
-			// button2
+			// eight
 			// 
-			this->button2->Location = System::Drawing::Point(54, 48);
-			this->button2->Name = L"button2";
-			this->button2->Size = System::Drawing::Size(35, 35);
-			this->button2->TabIndex = 1;
-			this->button2->Text = L"8";
-			this->button2->UseVisualStyleBackColor = true;
-			this->button2->Click += gcnew System::EventHandler(this, &Form1::buttonAll_Click);
+			this->eight->Location = System::Drawing::Point(54, 48);
+			this->eight->Name = L"eight";
+			this->eight->Size = System::Drawing::Size(35, 35);
+			this->eight->TabIndex = 1;
+			this->eight->TabStop = false;
+			this->eight->Text = L"8";
+			this->eight->UseVisualStyleBackColor = true;
+			this->eight->Click += gcnew System::EventHandler(this, &Form1::buttonAll_Click);
+			this->eight->Enter += gcnew System::EventHandler(this, &Form1::Do_Nothing);
 			// 
-			// button3
+			// nine
 			// 
-			this->button3->Location = System::Drawing::Point(95, 48);
-			this->button3->Name = L"button3";
-			this->button3->Size = System::Drawing::Size(35, 35);
-			this->button3->TabIndex = 2;
-			this->button3->Text = L"9";
-			this->button3->UseVisualStyleBackColor = true;
-			this->button3->Click += gcnew System::EventHandler(this, &Form1::buttonAll_Click);
+			this->nine->Location = System::Drawing::Point(95, 48);
+			this->nine->Name = L"nine";
+			this->nine->Size = System::Drawing::Size(35, 35);
+			this->nine->TabIndex = 2;
+			this->nine->TabStop = false;
+			this->nine->Text = L"9";
+			this->nine->UseVisualStyleBackColor = true;
+			this->nine->Click += gcnew System::EventHandler(this, &Form1::buttonAll_Click);
+			this->nine->Enter += gcnew System::EventHandler(this, &Form1::Do_Nothing);
 			// 
-			// button4
+			// four
 			// 
-			this->button4->Location = System::Drawing::Point(13, 89);
-			this->button4->Name = L"button4";
-			this->button4->Size = System::Drawing::Size(35, 35);
-			this->button4->TabIndex = 3;
-			this->button4->Text = L"4";
-			this->button4->UseVisualStyleBackColor = true;
-			this->button4->Click += gcnew System::EventHandler(this, &Form1::buttonAll_Click);
+			this->four->Location = System::Drawing::Point(13, 89);
+			this->four->Name = L"four";
+			this->four->Size = System::Drawing::Size(35, 35);
+			this->four->TabIndex = 3;
+			this->four->TabStop = false;
+			this->four->Text = L"4";
+			this->four->UseVisualStyleBackColor = true;
+			this->four->Click += gcnew System::EventHandler(this, &Form1::buttonAll_Click);
+			this->four->Enter += gcnew System::EventHandler(this, &Form1::Do_Nothing);
 			// 
-			// button5
+			// five
 			// 
-			this->button5->Location = System::Drawing::Point(54, 89);
-			this->button5->Name = L"button5";
-			this->button5->Size = System::Drawing::Size(35, 35);
-			this->button5->TabIndex = 4;
-			this->button5->Text = L"5";
-			this->button5->UseVisualStyleBackColor = true;
-			this->button5->Click += gcnew System::EventHandler(this, &Form1::buttonAll_Click);
+			this->five->Location = System::Drawing::Point(54, 89);
+			this->five->Name = L"five";
+			this->five->Size = System::Drawing::Size(35, 35);
+			this->five->TabIndex = 4;
+			this->five->TabStop = false;
+			this->five->Text = L"5";
+			this->five->UseVisualStyleBackColor = true;
+			this->five->Click += gcnew System::EventHandler(this, &Form1::buttonAll_Click);
+			this->five->Enter += gcnew System::EventHandler(this, &Form1::Do_Nothing);
 			// 
-			// button6
+			// six
 			// 
-			this->button6->Location = System::Drawing::Point(95, 89);
-			this->button6->Name = L"button6";
-			this->button6->Size = System::Drawing::Size(35, 35);
-			this->button6->TabIndex = 5;
-			this->button6->Text = L"6";
-			this->button6->UseVisualStyleBackColor = true;
-			this->button6->Click += gcnew System::EventHandler(this, &Form1::buttonAll_Click);
+			this->six->Location = System::Drawing::Point(95, 89);
+			this->six->Name = L"six";
+			this->six->Size = System::Drawing::Size(35, 35);
+			this->six->TabIndex = 5;
+			this->six->TabStop = false;
+			this->six->Text = L"6";
+			this->six->UseVisualStyleBackColor = true;
+			this->six->Click += gcnew System::EventHandler(this, &Form1::buttonAll_Click);
+			this->six->Enter += gcnew System::EventHandler(this, &Form1::Do_Nothing);
 			// 
-			// button7
+			// one
 			// 
-			this->button7->Location = System::Drawing::Point(13, 130);
-			this->button7->Name = L"button7";
-			this->button7->Size = System::Drawing::Size(35, 35);
-			this->button7->TabIndex = 6;
-			this->button7->Text = L"1";
-			this->button7->UseVisualStyleBackColor = true;
-			this->button7->Click += gcnew System::EventHandler(this, &Form1::buttonAll_Click);
+			this->one->Location = System::Drawing::Point(13, 130);
+			this->one->Name = L"one";
+			this->one->Size = System::Drawing::Size(35, 35);
+			this->one->TabIndex = 6;
+			this->one->TabStop = false;
+			this->one->Text = L"1";
+			this->one->UseVisualStyleBackColor = true;
+			this->one->Click += gcnew System::EventHandler(this, &Form1::buttonAll_Click);
+			this->one->Enter += gcnew System::EventHandler(this, &Form1::Do_Nothing);
 			// 
-			// button8
+			// two
 			// 
-			this->button8->Location = System::Drawing::Point(54, 130);
-			this->button8->Name = L"button8";
-			this->button8->Size = System::Drawing::Size(35, 35);
-			this->button8->TabIndex = 7;
-			this->button8->Text = L"2";
-			this->button8->UseVisualStyleBackColor = true;
-			this->button8->Click += gcnew System::EventHandler(this, &Form1::buttonAll_Click);
+			this->two->Location = System::Drawing::Point(54, 130);
+			this->two->Name = L"two";
+			this->two->Size = System::Drawing::Size(35, 35);
+			this->two->TabIndex = 7;
+			this->two->TabStop = false;
+			this->two->Text = L"2";
+			this->two->UseVisualStyleBackColor = true;
+			this->two->Click += gcnew System::EventHandler(this, &Form1::buttonAll_Click);
+			this->two->Enter += gcnew System::EventHandler(this, &Form1::Do_Nothing);
 			// 
-			// button9
+			// three
 			// 
-			this->button9->Location = System::Drawing::Point(95, 130);
-			this->button9->Name = L"button9";
-			this->button9->Size = System::Drawing::Size(35, 35);
-			this->button9->TabIndex = 8;
-			this->button9->Text = L"3";
-			this->button9->UseVisualStyleBackColor = true;
-			this->button9->Click += gcnew System::EventHandler(this, &Form1::buttonAll_Click);
+			this->three->Location = System::Drawing::Point(95, 130);
+			this->three->Name = L"three";
+			this->three->Size = System::Drawing::Size(35, 35);
+			this->three->TabIndex = 8;
+			this->three->TabStop = false;
+			this->three->Text = L"3";
+			this->three->UseVisualStyleBackColor = true;
+			this->three->Click += gcnew System::EventHandler(this, &Form1::buttonAll_Click);
+			this->three->Enter += gcnew System::EventHandler(this, &Form1::Do_Nothing);
 			// 
-			// button10
+			// zero
 			// 
-			this->button10->Location = System::Drawing::Point(12, 171);
-			this->button10->Name = L"button10";
-			this->button10->Size = System::Drawing::Size(77, 35);
-			this->button10->TabIndex = 9;
-			this->button10->Text = L"0";
-			this->button10->UseVisualStyleBackColor = true;
-			this->button10->Click += gcnew System::EventHandler(this, &Form1::buttonAll_Click);
+			this->zero->Location = System::Drawing::Point(12, 171);
+			this->zero->Name = L"zero";
+			this->zero->Size = System::Drawing::Size(77, 35);
+			this->zero->TabIndex = 9;
+			this->zero->TabStop = false;
+			this->zero->Text = L"0";
+			this->zero->UseVisualStyleBackColor = true;
+			this->zero->Click += gcnew System::EventHandler(this, &Form1::buttonAll_Click);
+			this->zero->Enter += gcnew System::EventHandler(this, &Form1::Do_Nothing);
 			// 
-			// button11
+			// comma
 			// 
-			this->button11->Location = System::Drawing::Point(95, 171);
-			this->button11->Name = L"button11";
-			this->button11->Size = System::Drawing::Size(35, 35);
-			this->button11->TabIndex = 10;
-			this->button11->Text = L".";
-			this->button11->UseVisualStyleBackColor = true;
-			this->button11->Click += gcnew System::EventHandler(this, &Form1::buttonAll_Click);
+			this->comma->Location = System::Drawing::Point(95, 171);
+			this->comma->Name = L"comma";
+			this->comma->Size = System::Drawing::Size(35, 35);
+			this->comma->TabIndex = 10;
+			this->comma->TabStop = false;
+			this->comma->Text = L",";
+			this->comma->UseVisualStyleBackColor = true;
+			this->comma->Click += gcnew System::EventHandler(this, &Form1::buttonAll_Click);
+			this->comma->Enter += gcnew System::EventHandler(this, &Form1::Do_Nothing);
 			// 
-			// button12
+			// add
 			// 
-			this->button12->Location = System::Drawing::Point(136, 171);
-			this->button12->Name = L"button12";
-			this->button12->Size = System::Drawing::Size(35, 35);
-			this->button12->TabIndex = 14;
-			this->button12->Text = L"+";
-			this->button12->UseVisualStyleBackColor = true;
-			this->button12->Click += gcnew System::EventHandler(this, &Form1::operator_Click);
+			this->add->Location = System::Drawing::Point(136, 171);
+			this->add->Name = L"add";
+			this->add->Size = System::Drawing::Size(35, 35);
+			this->add->TabIndex = 14;
+			this->add->TabStop = false;
+			this->add->Text = L"+";
+			this->add->UseVisualStyleBackColor = true;
+			this->add->Click += gcnew System::EventHandler(this, &Form1::operator_Click);
+			this->add->Enter += gcnew System::EventHandler(this, &Form1::Do_Nothing);
 			// 
-			// button13
+			// sub
 			// 
-			this->button13->Location = System::Drawing::Point(136, 130);
-			this->button13->Name = L"button13";
-			this->button13->Size = System::Drawing::Size(35, 35);
-			this->button13->TabIndex = 13;
-			this->button13->Text = L"-";
-			this->button13->UseVisualStyleBackColor = true;
-			this->button13->Click += gcnew System::EventHandler(this, &Form1::operator_Click);
+			this->sub->Location = System::Drawing::Point(136, 130);
+			this->sub->Name = L"sub";
+			this->sub->Size = System::Drawing::Size(35, 35);
+			this->sub->TabIndex = 13;
+			this->sub->TabStop = false;
+			this->sub->Text = L"-";
+			this->sub->UseVisualStyleBackColor = true;
+			this->sub->Click += gcnew System::EventHandler(this, &Form1::operator_Click);
+			this->sub->Enter += gcnew System::EventHandler(this, &Form1::Do_Nothing);
 			// 
-			// button14
+			// mult
 			// 
-			this->button14->Location = System::Drawing::Point(136, 89);
-			this->button14->Name = L"button14";
-			this->button14->Size = System::Drawing::Size(35, 35);
-			this->button14->TabIndex = 12;
-			this->button14->Text = L"*";
-			this->button14->UseVisualStyleBackColor = true;
-			this->button14->Click += gcnew System::EventHandler(this, &Form1::operator_Click);
+			this->mult->Location = System::Drawing::Point(136, 89);
+			this->mult->Name = L"mult";
+			this->mult->Size = System::Drawing::Size(35, 35);
+			this->mult->TabIndex = 12;
+			this->mult->TabStop = false;
+			this->mult->Text = L"*";
+			this->mult->UseVisualStyleBackColor = true;
+			this->mult->Click += gcnew System::EventHandler(this, &Form1::operator_Click);
+			this->mult->Enter += gcnew System::EventHandler(this, &Form1::Do_Nothing);
 			// 
-			// button15
+			// div
 			// 
-			this->button15->Location = System::Drawing::Point(136, 48);
-			this->button15->Name = L"button15";
-			this->button15->Size = System::Drawing::Size(35, 35);
-			this->button15->TabIndex = 11;
-			this->button15->Text = L"/";
-			this->button15->UseVisualStyleBackColor = true;
-			this->button15->Click += gcnew System::EventHandler(this, &Form1::operator_Click);
+			this->div->Location = System::Drawing::Point(136, 48);
+			this->div->Name = L"div";
+			this->div->Size = System::Drawing::Size(35, 35);
+			this->div->TabIndex = 11;
+			this->div->TabStop = false;
+			this->div->Text = L"/";
+			this->div->UseVisualStyleBackColor = true;
+			this->div->Click += gcnew System::EventHandler(this, &Form1::operator_Click);
+			this->div->Enter += gcnew System::EventHandler(this, &Form1::Do_Nothing);
 			// 
-			// button16
+			// equal
 			// 
-			this->button16->Location = System::Drawing::Point(177, 130);
-			this->button16->Name = L"button16";
-			this->button16->Size = System::Drawing::Size(35, 76);
-			this->button16->TabIndex = 17;
-			this->button16->Text = L"=";
-			this->button16->UseVisualStyleBackColor = true;
-			this->button16->Click += gcnew System::EventHandler(this, &Form1::button16_Click);
+			this->equal->Location = System::Drawing::Point(177, 130);
+			this->equal->Name = L"equal";
+			this->equal->Size = System::Drawing::Size(35, 76);
+			this->equal->TabIndex = 17;
+			this->equal->Text = L"=";
+			this->equal->UseVisualStyleBackColor = true;
+			this->equal->Click += gcnew System::EventHandler(this, &Form1::button16_Click);
 			// 
-			// button17
+			// C
 			// 
-			this->button17->Location = System::Drawing::Point(177, 89);
-			this->button17->Name = L"button17";
-			this->button17->Size = System::Drawing::Size(35, 35);
-			this->button17->TabIndex = 16;
-			this->button17->Text = L"C";
-			this->button17->UseVisualStyleBackColor = true;
-			this->button17->Click += gcnew System::EventHandler(this, &Form1::button17_Click);
+			this->C->Location = System::Drawing::Point(177, 89);
+			this->C->Name = L"C";
+			this->C->Size = System::Drawing::Size(35, 35);
+			this->C->TabIndex = 16;
+			this->C->TabStop = false;
+			this->C->Text = L"C";
+			this->C->UseVisualStyleBackColor = true;
+			this->C->Click += gcnew System::EventHandler(this, &Form1::button17_Click);
+			this->C->Enter += gcnew System::EventHandler(this, &Form1::Do_Nothing);
 			// 
-			// button18
+			// CE
 			// 
-			this->button18->Location = System::Drawing::Point(177, 48);
-			this->button18->Name = L"button18";
-			this->button18->Size = System::Drawing::Size(35, 35);
-			this->button18->TabIndex = 15;
-			this->button18->Text = L"CE";
-			this->button18->UseVisualStyleBackColor = true;
-			this->button18->Click += gcnew System::EventHandler(this, &Form1::button18_Click);
+			this->CE->Location = System::Drawing::Point(177, 48);
+			this->CE->Name = L"CE";
+			this->CE->Size = System::Drawing::Size(35, 35);
+			this->CE->TabIndex = 15;
+			this->CE->TabStop = false;
+			this->CE->Text = L"CE";
+			this->CE->UseVisualStyleBackColor = true;
+			this->CE->Click += gcnew System::EventHandler(this, &Form1::button18_Click);
+			this->CE->Enter += gcnew System::EventHandler(this, &Form1::Do_Nothing);
 			// 
 			// result
 			// 
@@ -287,8 +340,10 @@ namespace CppCLRWinformsProjekt {
 				static_cast<System::Byte>(204)));
 			this->result->Location = System::Drawing::Point(13, 13);
 			this->result->Name = L"result";
+			this->result->ReadOnly = true;
 			this->result->Size = System::Drawing::Size(199, 26);
 			this->result->TabIndex = 18;
+			this->result->TabStop = false;
 			this->result->Text = L"0";
 			this->result->TextAlign = System::Windows::Forms::HorizontalAlignment::Right;
 			// 
@@ -309,47 +364,62 @@ namespace CppCLRWinformsProjekt {
 			this->ClientSize = System::Drawing::Size(224, 216);
 			this->Controls->Add(this->equation);
 			this->Controls->Add(this->result);
-			this->Controls->Add(this->button16);
-			this->Controls->Add(this->button17);
-			this->Controls->Add(this->button18);
-			this->Controls->Add(this->button12);
-			this->Controls->Add(this->button13);
-			this->Controls->Add(this->button14);
-			this->Controls->Add(this->button15);
-			this->Controls->Add(this->button11);
-			this->Controls->Add(this->button10);
-			this->Controls->Add(this->button9);
-			this->Controls->Add(this->button8);
-			this->Controls->Add(this->button7);
-			this->Controls->Add(this->button6);
-			this->Controls->Add(this->button5);
-			this->Controls->Add(this->button4);
-			this->Controls->Add(this->button3);
-			this->Controls->Add(this->button2);
-			this->Controls->Add(this->button1);
+			this->Controls->Add(this->equal);
+			this->Controls->Add(this->C);
+			this->Controls->Add(this->CE);
+			this->Controls->Add(this->add);
+			this->Controls->Add(this->sub);
+			this->Controls->Add(this->mult);
+			this->Controls->Add(this->div);
+			this->Controls->Add(this->comma);
+			this->Controls->Add(this->zero);
+			this->Controls->Add(this->three);
+			this->Controls->Add(this->two);
+			this->Controls->Add(this->one);
+			this->Controls->Add(this->six);
+			this->Controls->Add(this->five);
+			this->Controls->Add(this->four);
+			this->Controls->Add(this->nine);
+			this->Controls->Add(this->eight);
+			this->Controls->Add(this->seven);
 			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::FixedSingle;
-			this->MinimizeBox = false;
+			this->KeyPreview = true;
+			this->MaximizeBox = false;
 			this->Name = L"Form1";
 			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
 			this->Text = L"Calc";
 			this->Load += gcnew System::EventHandler(this, &Form1::Form1_Load);
+			this->KeyPress += gcnew System::Windows::Forms::KeyPressEventHandler(this, &Form1::Form1_KeyPress);
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
 		}
 #pragma endregion
 	private: System::Void Form1_Load(System::Object^ sender, System::EventArgs^ e) {
+		equation->Focus();
 	}
 	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
 	}
+
+	private: System::Void Do_Nothing(System::Object^ sender, System::EventArgs^ e) {
+	}
+
 	private: System::Void buttonAll_Click(System::Object^ sender, System::EventArgs^ e) {
 		if (result->Text == "0" || operation_pressed ) {
 			result->Clear();
 		}
 		operation_pressed = false;
 		Button^ b = (Button^)sender;
+		if (b->Text == ",") {
+			if (!result->Text->Contains(",")) {
+				result->Text = result->Text + b->Text;
+			}
+		}
+		else {
+			result->Text = result->Text + b->Text;
+		}
 
-		result->Text = result->Text + b->Text;
+		
 	}
 
 	private: System::Void button18_Click(System::Object^ sender, System::EventArgs^ e) { // CE
@@ -357,14 +427,26 @@ namespace CppCLRWinformsProjekt {
 	}
 	private: System::Void operator_Click(System::Object^ sender, System::EventArgs^ e) {
 		Button^ b = (Button^)sender;
-		operation = b->Text;
-		value = System::Convert::ToDouble(result->Text->ToString());
-		operation_pressed = true;
-		equation->Text = value + " " + operation;
+		equal->Focus();
 
+		if (value != 0) {
+
+			equal->PerformClick();
+			operation_pressed = true;
+			operation = b->Text;
+			equation->Text = value + " " + operation;
+
+		}
+		else {
+			operation = b->Text;
+			value = System::Convert::ToDouble(result->Text->ToString());
+			operation_pressed = true;
+			equation->Text = value + " " + operation;
+		}
 	}
 	private: System::Void button16_Click(System::Object^ sender, System::EventArgs^ e) { // =
-		//operation_pressed = false;
+
+		
 		equation->Text = "";
 
 		if (operation == "+") {
@@ -383,12 +465,81 @@ namespace CppCLRWinformsProjekt {
 			result->Text = (value / System::Convert::ToDouble(result->Text)).ToString();
 
 		} // else if end
-		//operation_pressed = false;
+		value = System::Convert::ToDouble(result->Text);
+		operation = "";
 
 	}
 private: System::Void button17_Click(System::Object^ sender, System::EventArgs^ e) { // C
 	result->Text = "0";
 	value = 0;
+	equation->Text = "";
 }
+	private: System::Void Form1_KeyPress(System::Object^ sender, System::Windows::Forms::KeyPressEventArgs^ e) {
+		
+		if (e->KeyChar.ToString() == "1") {
+			one->PerformClick();
+
+		}
+		else if (e->KeyChar.ToString() == "2") {
+			two->PerformClick();
+
+		}
+		else if (e->KeyChar.ToString() == "3") {
+			three->PerformClick();
+
+		}
+		else if (e->KeyChar.ToString() == "4") {
+			four->PerformClick();
+
+		}
+		else if (e->KeyChar.ToString() == "5") {
+			five->PerformClick();
+
+		}
+		else if (e->KeyChar.ToString() == "6") {
+			six->PerformClick();
+
+		}
+		else if (e->KeyChar.ToString() == "7") {
+			seven->PerformClick();
+
+		}
+		else if (e->KeyChar.ToString() == "8") {
+			eight->PerformClick();
+
+		}
+		else if (e->KeyChar.ToString() == "9") {
+			nine->PerformClick();
+
+		}
+		else if (e->KeyChar.ToString() == "0") {
+			zero->PerformClick();
+
+		}
+		else if (e->KeyChar.ToString() == "/") {
+			div->PerformClick();
+
+		}
+		else if (e->KeyChar.ToString() == "*") {
+			mult->PerformClick();
+
+		}
+		else if (e->KeyChar.ToString() == "-") {
+			sub->PerformClick();
+
+		}
+		else if (e->KeyChar.ToString() == "+") {
+			add->PerformClick();
+
+		}
+		else if (e->KeyChar.ToString() == ",") {
+			comma->PerformClick();
+
+		}
+		else if (e->KeyChar.ToString() == ((char)127).ToString()) { //del btn
+			C->PerformClick();
+
+		}
+	}
 };
 }
